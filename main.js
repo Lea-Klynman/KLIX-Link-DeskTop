@@ -12,6 +12,8 @@ function createWindow() {
       contextIsolation: false     
     }
   });
+  
+  mainWindow.setContentProtection(true);
 
   mainWindow.loadFile('index.html');
 
